@@ -43,6 +43,7 @@ function draw() {
 	}if (gameState==="play"){
 		textStyle("bold")
 		textSize(30)
+		fill(255,0,0)
 		text("CONGRATULATIONS!🎉🎉🎉🎉🎉🎉🎉🎉🎉", 300, 300)
 		text("You did it !", 480, 350)
 		text("You cleaned the environment !", 400, 400)
