@@ -5,10 +5,6 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
 var paper, dustbin1,dustbin2,dustbin3, ground, gameState="ready";
-function preload()
-{
-	
-}
 
 function setup() {
 	createCanvas(1200, 600);
@@ -18,7 +14,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	paper = new Paper(100, 350);
+	paper = new Paper(100, 400);
 	ground = new Ground(600, 590, 1200, 10)
 	dustbin1 = new Dustbin(755, 530, 10, 100);
 	dustbin2 = new Dustbin(850, 580, 200, 10);
@@ -62,6 +58,3 @@ function draw() {
 	}
 
 }
-
-
-
